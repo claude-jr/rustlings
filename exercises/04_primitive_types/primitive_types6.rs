@@ -12,6 +12,13 @@ mod tests {
         // and assign it to a variable called `second`.
         // let second = ???;
 
+        // Pattern way, my assumption
+        let (_first, _second, _third) = numbers;
+        let second = _second;
+
+        // or standard way
+        let second = numbers.1;
+
         assert_eq!(second, 2, "This is not the 2nd number in the tuple!");
     }
 }
